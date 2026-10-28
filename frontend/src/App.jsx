@@ -39,7 +39,7 @@ function App() {
   };
 
   return (
-    <div style={{ padding: '40px', fontFamily: 'sans-serif', maxWidth: '800px', margin: '0 auto', backgroundColor: '#ffffff', color: '#333' }}>
+    <div style={{ padding: '40px', fontFamily: 'sans-serif', maxWidth: '800px', margin: '0 auto', background: 'radial-gradient(circle at 8% 12%, rgba(167, 139, 250, 0.32), transparent 34%), radial-gradient(circle at 92% 88%, rgba(34, 211, 238, 0.24), transparent 38%), linear-gradient(135deg, #faf5ff 0%, #eef2ff 48%, #ecfeff 100%)', border: '1px solid rgba(99, 102, 241, 0.12)', borderRadius: '24px', boxShadow: '0 24px 70px rgba(79, 70, 229, 0.14)', color: '#333' }}>
       <h1 style={{ textAlign: 'center', color: '#2c3e50' }}>AI Resume Analyzer</h1>
       <p style={{ textAlign: 'center', color: '#7f8c8d' }}>Upload your PDF resume to see your ATS match score against our database.</p>
       
