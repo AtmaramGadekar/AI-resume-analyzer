@@ -43,12 +43,12 @@ function App() {
       <h1 style={{ textAlign: 'center', color: '#2c3e50' }}>AI Resume Analyzer</h1>
       <p style={{ textAlign: 'center', color: '#7f8c8d' }}>Upload your PDF resume to see your ATS match score against our database.</p>
       
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '30px 0', padding: '40px', border: '2px dashed #bdc3c7', borderRadius: '10px', backgroundColor: '#fafafa' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0px', rowGap: '0px', columnGap: '0px', margin: '30px 0', padding: '40px', border: '2px dashed #bdc3c7', borderRadius: '10px', backgroundColor: '#fafafa' }}>
         <input type="file" accept=".pdf" onChange={handleFileChange} style={{ marginBottom: '20px' }} />
         <button 
           onClick={handleUpload} 
           disabled={loading}
-          style={{ padding: '12px 24px', backgroundColor: '#3498db', color: 'white', border: 'none', borderRadius: '5px', cursor: loading ? 'not-allowed' : 'pointer', fontSize: '16px', fontWeight: 'bold' }}>
+          style={{ width: '100%', padding: '12px 24px', backgroundColor: '#4f46e5', color: 'white', border: 'none', borderRadius: '5px', cursor: loading ? 'not-allowed' : 'pointer', fontSize: '16px', fontWeight: '500' }}>
           {loading ? "Analyzing Pipeline..." : "Analyze Resume"}
         </button>
         {error && <p style={{ color: '#e74c3c', marginTop: '15px' }}>{error}</p>}
